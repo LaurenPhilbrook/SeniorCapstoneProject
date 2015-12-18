@@ -1,0 +1,10 @@
+API Calls
+
+GET
+/category --shows all categories in the database
+/subcategory --shows all subcategories in the database
+/business --shows all the businesses in the database
+/category/{id} --see all the subcategories related to a category
+/subcategory/{id} -- see all the businesses related to a subcategory
+/business/{id} -- see all the information about a specific business
+

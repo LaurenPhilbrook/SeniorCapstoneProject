@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="org.jackie.corvallisrecycler_final_project.directory.BusinessItemActivity"
+                android:background="#ffffffff"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#b5bebe"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:text="Business Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameLabel4"
+            android:textColor="#ff000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/textView3"
+            android:layout_marginTop="20dp"
+            android:textColor="#7da52e"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#7da52e"
+            android:layout_above="@+id/addressLabel"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1610 Rock Lane"
+            android:id="@+id/addressLabel"
+            android:layout_marginTop="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:id="@+id/cityLabel"
+                android:focusableInTouchMode="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ST"
+                android:id="@+id/stateLabel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:id="@+id/space2Label"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="53188"
+                android:id="@+id/zipLabel"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact"
+            android:id="@+id/textView4"
+            android:layout_marginTop="40dp"
+            android:textColor="#7da52e"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#7da52e"
+            android:layout_above="@+id/textView4"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="555-555-5555"
+            android:id="@+id/phoneLabel"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web"
+            android:id="@+id/textView5"
+            android:layout_marginTop="40dp"
+            android:textColor="#7da52e"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#7da52e"
+            android:layout_above="@+id/textView5"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.google.com"
+            android:id="@+id/webLabel"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:autoLink="web"
+            android:cursorVisible="true"
+            android:linksClickable="true"
+            android:onClick="goToPage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours"
+            android:id="@+id/textView6"
+            android:layout_marginTop="40dp"
+            android:textColor="#7da52e"
+            android:phoneNumber="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#7da52e"
+            android:layout_above="@+id/textView6"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M-F 8:00 am - 5:00 pm"
+            android:id="@+id/hoursLabel"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/latitudeLabel"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/longitudeLabel"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

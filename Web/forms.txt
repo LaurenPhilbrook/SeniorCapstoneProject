@@ -1,0 +1,8 @@
+<form method = "POST" action="update.php">
+						<input type="submit" name="action" value="Edit"/>
+						<input type="hidden" name="pk_bus_update" value="<?php echo $info[$i]['id']?>">
+					</form>
+					<form method = "DELETE" action="delete.php">
+						<input type="submit" name="action" value="Remove"/>
+						<input type="hidden" name="pk_bus_delete" value="<?php echo $info[$i]['id']?>">
+					</form>

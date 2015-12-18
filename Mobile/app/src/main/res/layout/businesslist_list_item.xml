@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                tools:background="#ffffffff"
+                android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:id="@+id/nameLabel3"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        android:paddingLeft="1dp"
+        android:clickable="false"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/numLabel"
+        android:layout_toEndOf="@+id/numLabel"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:id="@+id/idLabel3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:gravity="left"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#"
+        android:id="@+id/numLabel"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        android:visibility="visible"
+        android:gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/idLabel3"
+        android:layout_toEndOf="@+id/idLabel3"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:id="@+id/cityLabel"
+        android:layout_below="@+id/nameLabel3"
+        android:layout_toRightOf="@+id/idLabel3"
+        android:layout_toEndOf="@+id/idLabel3"
+        android:textColor="#ff000000"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

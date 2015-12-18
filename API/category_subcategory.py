@@ -1,0 +1,22 @@
+import webapp2
+import MySQLdb
+import json
+import database_object
+
+
+class CategorySubcategory(webapp2.RequestHandler):
+	def put(self, **kwargs):
+		self.response.headers.add_header("Access-Control-Allow-Origin", "http://ec2-52-1-168-208.compute-1.amazonaws.com/")
+		self.response.headers['content-type'] = 'application/json'
+		db = database_object.DatabaseObject()
+		db.cursor.execute('INSERT INTO category_subcategory(catId, subcatId) values (%s, %s)', (kwargs['catId'], kwargs['subcatId'],))
+		db.db.commit()
+
+
+	def delete(self, **kwargs):
+		self.response.headers.add_header("Access-Control-Allow-Origin", "http://ec2-52-1-168-208.compute-1.amazonaws.com/")
+		self.response.headers['content-type'] = 'application/json'
+		db = database_object.DatabaseObject()
+		if 'catId' in kwargs and 'subcatId' in kwargs:
+			db.cursor.execute('DELETE FROM category_subcategory WHERE catId = %s AND subcatId = %s', (kwargs['catId'], kwargs['subcatId'],))
+			db.db.commit()
